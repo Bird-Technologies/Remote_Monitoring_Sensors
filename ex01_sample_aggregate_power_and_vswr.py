@@ -37,13 +37,14 @@ import time
 
 mysensor = Bird4042E_Sensor("192.168.3.200")
 
-print(f"Model: {mysensor.model()}")
-print(f"Name: {mysensor.name()}")
-print(f"Description: {mysensor.system_description()}")
-print(f"Serial Num.: {mysensor.serial_number()}")
-print(f"Cal Date: {mysensor.calibration_date()}")
-print(f"Uptime: {mysensor.uptime()}")
-print(f"Temperature: {mysensor.temperature()}\u00b0C")
+print(f"Model: {mysensor.get_model()}")
+print(f"Name: {mysensor.get_name()}")
+print(f"Description: {mysensor.get_system_description()}")
+print(f"Serial Num.: {mysensor.get_serial_number()}")
+print(f"Cal Date: {mysensor.get_calibration_date()}")
+print(f"Uptime: {mysensor.get_uptime()}")
+print(f"Temperature: {mysensor.get_temperature()}\u00b0C")
 
-for j in range(30):
-    print(f"forward = {mysensor.forward_power()}, reflected = {mysensor.reflected_power()}, vswr = {mysensor.vswr()}")
+for j in range(10):
+    print(f"forward = {mysensor.get_forward_power()}, reflected = {mysensor.get_reflected_power()}, vswr = {mysensor.get_vswr()}")
+
