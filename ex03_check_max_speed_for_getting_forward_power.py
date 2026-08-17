@@ -1,7 +1,7 @@
 """
 Example Description:
-    This example shows how to poll the 4042E remote power monitor/sensor
-    for forward power, reflected power, and VSWR information.
+    This example is used to get a feel for how quickly the code will allow the
+    4042E to respond to GETs of forward power.
 
 @verbatim
 
